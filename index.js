@@ -4,7 +4,7 @@ var button = document.getElementById("submit");
 
 function sendData() {
 
-    data = { email: String(document.getElementById("inputTag").value) };
+    data = { email: String(document.getElementById("emailInput").value) };
 
     fetch("http://192.168.0.32:80/api/submitEmail", {
         method: "POST",
