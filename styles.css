@@ -125,3 +125,18 @@ img{
   margin-right: 25%;
   font-weight: lighter;
 }
+
+#socialNContainer img {
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    align-self: center !important;
+}
+
+#socialNContainer{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+
+}
