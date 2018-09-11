@@ -5,6 +5,7 @@ var button = document.getElementById("submit");
 function sendData() {
 
     data = { email: String(document.getElementById("emailInput").value) };
+	//console.log(data);
 
     fetch("http://192.168.0.32:80/api/submitEmail", {
         method: "POST",
@@ -14,9 +15,9 @@ function sendData() {
     });
 }
 
-document.getElementById("myForm").addEventListener("keypress", function(event) {
+/*document.getElementById("myForm").addEventListener("keypress", function(event) {
     if(event.which == 13) {
         event.preventDefault();
         sendData();
     }
-});
+});*/

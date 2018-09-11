@@ -11,32 +11,41 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
-
+	<script src="./scripts/index.js"></script>
 </head>
 <body>
     <video autoplay muted loop id="myVideo">
-		<source src="./animations/sea.mp4" type="video/mp4">
+		<source src="./animations/blue_sea.mp4" type="video/mp4">
 	</video>
 
     <div class="ui basic compact segment">
         <div class="ui grid">
             <div class="first eight wide column">
-                <i class="huge facebook icon"></i>
+                <a href="https://www.facebook.com/atarraya.co/" target="_blank"><img class="myIcon" src="./images/icono facebook.png" alt=""/></a>
             </div>
             <div class="eight wide column">
-                <i class="huge instagram icon"></i>
+                <a href="https://www.instagram.com/atarraya.fishmarket/" target="_blank"><img class="myIcon" src="./images/icono instagram.png" alt=""/></a>
             </div>
         </div>
     </div>
 
     <div class="ui basic compact right floated segment">
-        <h1 class="ui header" style="color: white;">Descongela lo que se viene</h1>
+        <h1 class="ui header" style="color: white;">Descongela lo que viene</h1>
         <form id="myForm" class="ui form">
-            <div class="ui fluid input">
-                <input id="emailInput" type="email" placeholder="Correo electrónico">
-            </div>
-        </form>
-        <p style="margin-top: 5px;">*al poner tu correo aceptas recibir noticias</p>
+			<div class="ui grid">
+				<div class="twelve wide column">
+					<div class="ui fluid input">
+						<input id="emailInput" type="email" placeholder="Correo electrónico">
+					</div>
+				</div>
+				<div class="two wide column">
+					<button type="button" onclick="sendData()" class="ui button" type="submit">Avísame</button>
+				</div>
+			</div>
+			
+            
+		</form>
+        <p style="margin-top: 5px;">*Al poner tu correo aceptas recibir noticias de Atarraya Fish Market</p>
     </div>
     
 

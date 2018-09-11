@@ -71,3 +71,8 @@ img {
     width: 60%;
     height: inherit;
 }
+
+.myIcon{
+	height: 5vh !important;
+	width: auto !important;
+}
