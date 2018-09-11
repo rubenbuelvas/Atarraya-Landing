@@ -4,14 +4,54 @@
     <meta charset="utf-8">
     <title>Atarraya - Fish Market</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="./scripts/index.js"></script>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+
 </head>
 <body>
     <video autoplay muted loop id="myVideo">
 		<source src="./animations/sea.mp4" type="video/mp4">
 	</video>
 
+    <div class="ui basic compact segment">
+        <div class="ui grid">
+            <div class="first eight wide column">
+                <i class="huge facebook icon"></i>
+            </div>
+            <div class="eight wide column">
+                <i class="huge instagram icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui basic compact right floated segment">
+        <h1 class="ui header" style="color: white;">Descongela lo que se viene</h1>
+        <form id="myForm" class="ui form">
+            <div class="ui fluid input">
+                <input id="emailInput" type="email" placeholder="Correo electrónico">
+            </div>
+        </form>
+        <p style="margin-top: 5px;">*al poner tu correo aceptas recibir noticias</p>
+    </div>
+    
+
+    <div id="banner" class="ui fluid container">
+        <div class="ui middle aligned grid">            
+            <div class="first eight wide column">
+                <img src="./animations/atarraya blanco.png" alt="Pescado">
+            </div>
+            <div class="second eight wide column">
+                    <img src="./animations/cover.png" alt="Cover de la pagina">                
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
 
 </body>
 </html>
