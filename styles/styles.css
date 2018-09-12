@@ -13,9 +13,10 @@ html, body {
     overflow: hidden;
 }
 
-h1.ui.header {
+h1 {
     font-family: MyriadPro-Light !important;
     font-size: 30.5px !important;
+    margin-bottom: 5px !important;
 }
 
 img {
