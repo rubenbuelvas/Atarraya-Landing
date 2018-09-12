@@ -17,34 +17,24 @@
 
 	<img id="myVideo" src="./animations/ezgif-1-45be36ff43.gif" alt=""/>
 
-    <div class="ui basic compact segment">
+    <div id="iconsSegment" class="ui basic compact segment">
         <div class="ui grid">
             <div class="first eight wide column">
                 <a href="https://www.facebook.com/atarraya.co/" target="_blank"><img class="myIcon" src="./images/icono facebook.png" alt=""/></a>
             </div>
-            <div class="eight wide column">
+            <div class="second eight wide column">
                 <a href="https://www.instagram.com/atarraya.fishmarket/" target="_blank"><img class="myIcon" src="./images/icono instagram.png" alt=""/></a>
             </div>
         </div>
     </div>
 
     <div class="ui basic compact right floated segment">
-        <h1 class="ui header" style="color: white;">Descongela lo que viene</h1>
+        <h1 style="color: white;">Descongela lo que viene</h1>
         <form id="myForm" class="ui form">
-			<div class="ui grid">
-				<div class="twelve wide column">
-					<div class="ui fluid input">
-						<input id="emailInput" type="email" placeholder="Correo electrónico">
-					</div>
-				</div>
-				<div class="two wide column">
-					<button type="button" onclick="sendData()" class="ui button" type="submit">Avísame</button>
-				</div>
-			</div>
-			
-            
+            <input id="emailInput" type="email" placeholder="Correo electrónico">
+            <button type="button" id="send" onclick="sendData()" class="ui button" type="submit">Avísame</button>
 		</form>
-        <p style="margin-top: 5px;">*Al poner tu correo aceptas recibir noticias de Atarraya Fish Market</p>
+        <p style="margin-top: 5px;">*Al poner tu correo aceptas recibir noticias.</p>
     </div>
     
 
@@ -54,7 +44,7 @@
                 <img src="./animations/atarraya blanco.png" alt="Pescado">
             </div>
             <div class="second eight wide column">
-                    <img src="./animations/cover.png" alt="Cover de la pagina">                
+                <img src="./animations/cover.png" alt="Cover de la pagina">                
             </div>
         </div>
     </div>

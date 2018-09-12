@@ -11,7 +11,11 @@ body {
 html, body {
     max-width: 100%;
     overflow: hidden;
+}
 
+h1.ui.header {
+    font-family: MyriadPro-Light !important;
+    font-size: 30.5px !important;
 }
 
 img {
@@ -20,6 +24,11 @@ img {
     margin-right: auto;
     width: 100%;
     z-index: -1;
+}
+
+#emailInput {
+    width: 200px;
+    border: 0px solid white;
 }
 
 #myVideo {
@@ -31,19 +40,36 @@ img {
     min-height: 100%;
 }
 
-.ui.basic.compact.segment {
-    margin: 50px 0px 0px 50px;
+#send {
+    margin-left: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+#iconsSegment {
+    margin: 60px 0px 0px 50px;
     z-index: 100; position: absolute; color: white;
     height: auto;
 }
 
-.ui.basic.compact.right.floated.segment {
+#banner .first {
+    border-right: 1px solid white;
+}
+
+.ui.right.floated.segment {
     margin: 50px 50px 0px 0px;
     z-index: 100; position: absolute; color: white;
     top: 0;
     right: 0;
     height: auto;
 }
+
+
+.ui.right.floated.segment p {
+    font-size: 17.5px;
+}
+
 
 .ui.basic.compact.segment .first {
     border-right: 1px solid white;
@@ -52,15 +78,20 @@ img {
 
 .eight.wide.column {
     color: white;
-
 }
 
 #banner .ui.grid {
     height: 100vh;
 }
 
-.first.column {
+
+#iconsSegment .first.column {
     border-right: 1px solid white;
+    padding-right: 35px;
+}
+
+#iconsSegment .second.column {
+    padding-left: 35px;
 }
 
 .first.column > img {
@@ -76,4 +107,12 @@ img {
 .myIcon{
 	height: 5vh !important;
 	width: auto !important;
+}
+
+#instagramIcon {
+    margin-right: 50px;
+}
+
+#facebookIcon {
+
 }
