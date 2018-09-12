@@ -2,22 +2,15 @@ var data = { email: "" };
 
 var button = document.getElementById("submit");
 
-function sendData() {
 
+button.addEventListener("click", function(event) {
     data = { email: String(document.getElementById("emailInput").value) };
 	//console.log(data);
 
-    fetch("http://192.168.0.32:80/api/submitEmail", {
+    fetch("http://atarraya.eastus.cloudapp.azure.com/api/submitEmail", {
         method: "POST",
         body: JSON.stringify(data)
     }).then(res => {
         alert(String(data.email) + " ha sido registrado exitosamente!\nPronto recibiras noticias de nosotros!")
     });
-}
-
-/*document.getElementById("myForm").addEventListener("keypress", function(event) {
-    if(event.which == 13) {
-        event.preventDefault();
-        sendData();
-    }
-});*/
+});
