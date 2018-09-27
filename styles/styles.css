@@ -88,11 +88,11 @@ img {
 
 #iconsSegment .first.column {
     border-right: 1px solid white;
-    padding-right: 35px;
+    padding-right: 30px;
 }
 
 #iconsSegment .second.column {
-    padding-left: 35px;
+    padding-left: 30px;
 }
 
 .first.column > img {
@@ -116,4 +116,19 @@ img {
 
 #facebookIcon {
 
+}
+
+#logogif{
+	width: 70% !important;
+
+}
+
+#submit{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+#submit:hover{
+	background-color: rgba(255, 255, 255, 1);
+	color: #2C4767;
 }
